@@ -23,7 +23,7 @@ alias la="ls -lah"
 alias refresh="source ~/.bash_profile"
 alias unhide="sudo chflags nohidden"
 alias hide="sudo chflags hidden"
-
+alias reset="echo -e \\\033c"
 # Functions
 
 edit() {
