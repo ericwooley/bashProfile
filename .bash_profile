@@ -34,38 +34,6 @@ edit() {
   fi
 }
 
-slide() {
-  cd ~/development/Slides/ && rvm 1.9.2
-  if [ "${1}" == "s" ]; then
-    rails s -u
-  fi
-}
-
-
-
-pman() {
-  man -t "${1}" | open -f -a /Applications/Preview.app
-}
-
-
-
-rd() {
-  if [ "${2}" == "kill" ]; then
-    screen -r ${1}
-  fi
-  if [ "${2}" != "kill" ]; then
-    cd ~/development/${1}/ && rvm 1.9.3-head@${1}
-    if [ "${2}" == "s" ]; then
-      screen -S ${1} -d -m guard
-      rails s -u
-    fi
-  fi
-}
-
-
-
-
-
 pub() {
   cat ~/.ssh/id_rsa.pub
 }
