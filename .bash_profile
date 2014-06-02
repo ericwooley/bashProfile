@@ -47,9 +47,6 @@ pman() {
   man -t "${1}" | open -f -a /Applications/Preview.app
 }
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
 
 
 rd() {
