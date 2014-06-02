@@ -1,11 +1,11 @@
 # Prompt
 
-#print_before_the_prompt () {  
-#    printf "$PWD\n"  
-#}  
+print_before_the_prompt () {  
+    printf "$txtred%s " "$PWD" 
+}  
   
-#PROMPT_COMMAND=print_before_the_prompt
-export PS1="$PWD | $USER >> "
+PROMPT_COMMAND=print_before_the_prompt
+export PS1="$USER >> "
 
 
 # Path
@@ -74,5 +74,5 @@ pub() {
 }
 
 alias simulator='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/De‌​veloper/Applications/iPhone\ Simulator.app'
-export PATH=$PATH:/Users/ericwooley/android-sdk-macosx/platform-tools/
-export PATH=$PATH:/Users/ericwooley/android-sdk-macosx/tools/
+export PATH=$PATH:/Users/$USER/android-sdk-macosx/platform-tools/
+export PATH=$PATH:/Users/$USER/android-sdk-macosx/tools/
